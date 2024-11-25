@@ -15,21 +15,15 @@ The primary goal of this project was to gain hands-on experience with Snowpark, 
 
 ### 2. **Key Files**  
 
-| File                   | Description                                                                                                                                 |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **load_database.sql**  | Defines the Snowflake environment, including:                                                                                              |
-|                        | - Creating a warehouse, schemas, and file format.                                                                                         |
-|                        | - Specifying the CSV path and stage.                                                                                                       |
-|                        | - Creating tables and loading data into Snowflake.                                                                                        |
-| **utils.py**           | Establishes the Snowpark connection to Snowflake using **Visual Studio Code**, leveraging credentials from `creds.json`.                   |
-| **creds.json**         | Stores Snowflake account credentials for secure connections.                                                                               |
-| **refine.py**          | Processes the raw dataset, performs data cleaning, and stores the refined data in the Snowflake **Refined** schema. Key steps include:     |
-|                        | - Dropping unnecessary columns.                                                                                                           |
-|                        | - Normalizing data and improving formatting.                                                                                              |
-|                        | - Handling null values with mean imputation.                                                                                              |
-| **curate.py**          | Creates two Snowflake **Curated** schema views from refined data using Snowpark DataFrames. These views are used for visualization.         |
-| **main.py**            | Serves as the entry point to execute all scripts sequentially, streamlining the workflow.                                                  |
-| **SnowparkCapstone.pdf** | Contains Sigma dashboards showcasing visualizations of the cleaned and refined data.                                                     |
+| File                  | Description                                                                                          |
+|-----------------------|------------------------------------------------------------------------------------------------------|
+| **load_database.sql** | Defines the Snowflake environment: creating a warehouse, schemas, file format, stage, tables, etc.  |
+| **utils.py**          | Establishes the Snowpark connection to Snowflake using `creds.json`.                                 |
+| **creds.json**        | Stores Snowflake account credentials for secure connections.                                         |
+| **refine.py**         | Processes raw data: drops columns, normalizes, formats, and imputes nulls with mean values.          |
+| **curate.py**         | Creates two Snowflake views for visualization in the Curated schema using Snowpark DataFrames.       |
+| **main.py**           | Executes all scripts sequentially for streamlined workflow.                                          |
+| **SnowparkCapstone.pdf** | Contains Sigma dashboards showcasing visualizations of the cleaned and refined data.              |
 
 ---
 
