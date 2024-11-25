@@ -52,15 +52,6 @@ The primary goal of this project was to gain hands-on experience with Snowpark, 
 
 ---
 
-## Folder Contents  
-
-- `data/`: Contains the raw dataset (*World_Happiness_Report_2024.csv*).  
-- `scripts/`: Includes Python scripts for connecting, refining, and curating data.  
-- `sql/`: Contains SQL files for setting up the Snowflake environment.  
-- `visualizations/`: Contains the Sigma dashboards (*SnowparkCapstone.pdf*).  
-
----
-
 ## Prerequisites  
 
 - Snowflake account and warehouse.  
