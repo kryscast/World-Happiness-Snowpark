@@ -1,0 +1,8 @@
+{
+    "account": "ABC12345",
+    "user": "email",
+    "password": "**************",
+    "role": "SNOWFLAKE_ROLE",
+    "warehouse": "SNOWFLAKE_WH",
+    "database": "SNOWPARK_DB"
+}  
